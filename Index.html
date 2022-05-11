@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+</head>
+<style>
+    body {
+        justify-content: center;
+        display: block;
+    }
+    p {
+        padding: auto;
+        margin: auto;
+        width: 90%;
+        background-color: red;
+    }
+    .texto:active > p::first-letter {
+        font-style: italic;
+        
+    }
+    .texto:active > p:nth-child(3n+3){
+        color: gold;
+        background-color: blue;
+    }
+    .texto:hover {
+        height: 30%;
+        column-count: 2;
+    }
+    .texto:hover:active {
+        height: 30%;
+        column-count: 3;
+    }
+    .imagen {
+        background-image: url("julio.jpg");
+        width: 50%;
+        background-size: cover;
+        margin: auto;
+        height: 500px;
+    }
+    .imagen:hover:active {
+        background-image: url("coliseo.jpg");
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="imagen">
+    </div>
+    <div class="texto">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at felis posuere, cursus sem vitae, scelerisque ante.
+        Nam non elit dui. Nunc neque nulla, lobortis vel augue eu, ullamcorper semper velit. Nulla ut purus non ipsum finibus vulputate.
+        Nunc ut pulvinar sapien. Suspendisse non ultrices massa, id pellentesque tortor. Sed volutpat orci vel eleifend eleifend. Nam 
+        aliquet dignissim nibh porta pretium. Vestibulum bibendum nulla nec nibh dignissim aliquet mollis sed mauris. Phasellus ligula 
+        eros, cursus at sem sed, ultrices fringilla tortor. Sed augue velit, auctor sed massa id, molestie laoreet nulla. Suspendisse in 
+        viverra metus. Maecenas ac ligula arcu. Cras.
+    </p>
+    <p>
+        Nullam euismod fermentum diam, suscipit dapibus nulla vehicula interdum. Aenean molestie convallis tortor, vel vestibulum ligula 
+        facilisis eget. Praesent rutrum ex vitae ante finibus, id pellentesque lectus feugiat. Cras venenatis facilisis ex, a egestas nunc 
+        tristique eu. Donec commodo id sapien blandit fermentum. Nunc scelerisque accumsan nulla, quis tristique nisl facilisis a. Ut 
+        pretium egestas ultricies. Morbi varius erat vel felis tincidunt pellentesque. Quisque sodales scelerisque quam, eget efficitur leo 
+        varius in. Quisque id nulla fringilla, pretium magna vel, fringilla augue. Proin luctus dui non felis faucibus, a interdum justo 
+        gravida. Nam egestas risus eu tortor fringilla, a vulputate leo.
+    </p>
+    <p>
+        Aenean mauris nunc, elementum at est et, gravida pretium libero. Vivamus convallis lectus erat, a ultrices ante dictum in. Vivamus 
+        est metus, placerat nec quam sit amet, fringilla pellentesque velit. Etiam pretium ligula non urna iaculis, et accumsan ligula 
+        porttitor. Maecenas blandit pharetra tristique. Maecenas dignissim nisl in suscipit vulputate. Sed non accumsan nunc. Aliquam erat 
+        volutpat. Vestibulum dolor arcu, faucibus hendrerit suscipit et, varius volutpat erat. Ut in massa ac neque congue scelerisque ac a 
+        quam. Aenean lacinia, magna aliquet euismod viverra, libero risus maximus elit, vel viverra diam nulla at dui. Phasellus nec nibh nec 
+        est sollicitudin dapibus.
+    </p>
+</div>
+</body>
+</html>
